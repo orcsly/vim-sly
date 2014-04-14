@@ -1,4 +1,18 @@
-execute pathogen#infect()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" " alternatively, pass a path where Vundle should install plugins
+" "let path = '~/some/path/here'
+" "call vundle#rc(path)
+"
+" " let Vundle manage Vundle, required
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'davidhalter/jedi-vim'
 
 set backspace=2
 
@@ -49,15 +63,15 @@ autocmd VimEnter * wincmd w
 let g:numbers_exclude = ['minibufexpl']
 
 " pyflakes
-let g:pyflakes_use_quickfix = 0
+"let g:pyflakes_use_quickfix = 0
 
 " pep8
-let g:pep8_map='<leader>8'
+"let g:pep8_map='<leader>8'
 
 " go to
-map <leader>j :RopeGotoDefinition<CR>
+"map <leader>j :RopeGotoDefinition<CR>
 
-map <leader>td <Plug>TaskList
+"map <leader>td <Plug>TaskList
 
 " jedi
 let g:jedi#auto_initialization = 1
