@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'fholgado/minibufexpl.vim'
 
 set backspace=2
 
@@ -45,6 +46,7 @@ set nobackup
 set noswapfile
 
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.DS_Store$', '\.o$']
+let g:NERDTreeDirArrows=0
 
 " remap jj to the escape key to make moving from insert to normal mode easier
 inoremap jj <ESC>
